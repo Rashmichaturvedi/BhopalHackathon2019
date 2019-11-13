@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    >
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/water"
+        android:clipToPadding="false" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="100dp"
+        android:layout_height="95dp"
+        android:layout_gravity="center"
+        android:src="@drawable/man" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:clipToPadding="false"
+        android:gravity="center"
+
+        android:layout_marginTop="10sp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="#212121">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="#212121"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/loginuserpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/foregetdesign"
+                    android:hint="Enter Your Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="30dp"
+                    android:textAllCaps="false"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/loginuseremail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="30dp"
+                android:textAllCaps="false"
+                android:background="@drawable/foregetdesign"
+                android:hint="Enter your Email Id "
+                android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="20sp">
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/resetpass"
+            android:text="Login"
+            android:onClick="loginuser"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="45dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_weight="1"
+        android:weightSum="2">
+
+        <TextView
+
+            android:layout_width="275dp"
+            android:layout_height="72dp"
+            android:layout_gravity="fill_horizontal"
+            android:layout_weight="1"
+            android:onClick="userforget"
+            android:text="FORGET PASSWORD "
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/singnupbtn"
+            android:layout_width="173dp"
+            android:layout_height="72dp"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:onClick="Signup_user"
+
+            android:text="SIGNUP NOW "
+            android:textColor="#ff0080"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
