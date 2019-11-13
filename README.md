@@ -1,1 +1,2 @@
 # BhopalHackathon2019
+It provides an enabling environment for the installation of a rainwater harvesting system. with the help of this application , user can calculate the optimal tank size required for household need in few easy steps with their fingertips.In addition, it maps the nearest vendors from where people canpurchase the installation  partss and provides other technical and dinancial aspects of rainwater harvestiong specific to the household site.
